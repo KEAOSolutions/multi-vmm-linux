@@ -2,20 +2,26 @@
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "vmSSPrefix": {
+    "image": {
+      "value": "CentOs6.7"
+    },
+    "vmssName": {
       "value": "mohodev"
     },
-    "numberOfVMSS": {
-      "value": 1
+    "instanceCount": {
+      "value": "4"
     },
-    "instanceCountPerVMSS": {
-      "value": 4
+    "authenticationType": {
+      "value": "sshPublicKey"
     },
-    "adminUsername": {
+    "username": {
       "value": "centos"
     },
-    "adminPassword": {
-      "value": "FudgeIt2day!"
+    "sshPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/uNxrRXeZUn44iE4Z10BClAw+i8JBtkg0hTYbxmUoy4ayBxhaRRH9Y9DtmLUxHDtxv/rf/BS4LE15XwA6eT2izYnOGpEFjrfB5UyVLRyFokLOmRwcLopt/hsXrioZWiIcDBhXpLWSMDDwQ+x7USlxygGtD9bTmGHWNNFbjW1mLKoxGiMYWs3jgBHxfnlbPUhTRc+v/fnDuL2gUKdgWBonrwAzXNb6+cJYD/iKARg/fgg5Y7jstHWzd2cjdSKDeQNsNK0b5yzjojeYYEDFOvUXoFhjo36GKcyvOw4V9Azh5f+Ej4BHW8IPgmn05cTR8WJJ8Jeqt24MbeWxdpHYf0I3 molliver@keao.cloud"
+    },
+    "location": {
+      "value": "North Europe"
     }
   }
 }
